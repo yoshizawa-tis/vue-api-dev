@@ -19,9 +19,15 @@
 
 ## 環境構築手順
 
-### Dockerイメージビルド（初回だけ）
+### フォルダ名変更
 
-- build.batを実行
+batファイルが置かれているフォルダ名を任意の名前に変更する。
+⇒フォルダ名が作成されるコンテナの名称になります。
+
+### Dockerイメージビルド＆コンテナ作成（初回だけ）
+
+1. build-image.batを実行
+2. create-container.batを実行
 
 ### コンテナ起動
 
@@ -29,7 +35,7 @@
 
 ### VSCodeで接続
 
-- Remote Containersでvue-appコンテナに接続しターミナルを開く
+- Remote Containersで作成されたコンテナに接続しターミナルを開く
 - /appを開いて作業開始
 
 
@@ -40,8 +46,7 @@
 
 ## 補足
 
-Dockerイメージ/コンテナ名は「vue-app」になります。  
+Dockerイメージ名は「vue-app」になります。  
 変更したい場合はbatファイルを修正してください。
 
 sam localには未対応（Docker in Dockerの設定ができてないので）
-

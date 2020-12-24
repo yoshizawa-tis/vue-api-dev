@@ -1,2 +1,3 @@
 cd %~dp0
-docker start vue-app
+for %%I in (.) do set DIRNAME=%%~nI%%~xI
+docker start %DIRNAME%
